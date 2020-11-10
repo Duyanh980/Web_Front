@@ -1,0 +1,58 @@
+img{
+    max-width: 100%;
+    weight: 200px;
+    height: 200px;
+
+}
+
+body{
+    background-color: #f5f4f4;
+    width: 1000px;
+}
+
+.top{
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    margin: 10px 20px 30px;
+    padding-left: 20px;
+}
+
+.DS{
+    float: left;
+    margin: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.DS h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.DS2{
+    float: left;
+    margin: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.DS2 h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
