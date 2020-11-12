@@ -1,0 +1,36 @@
+
+.box{
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    border: 3px solid #ffffff;
+    background-color: #f5f8f7;
+}
+
+.top{
+    text-align: center;
+    width: 100%;
+}
+
+.form{
+    margin: 20px 50px 20px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+.form p{
+    padding-left: 50px;
+}
+
+.form h2{
+    text-align: center;
+}
+
+
+.bottom{
+    text-align: center;
+}
