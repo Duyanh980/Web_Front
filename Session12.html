@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+    <h1 onmouseenter="demo1()" onmouseleave="demo3()" id="heading">Tiêu đề</h1>
+    <button type="button" onclick="demo1(this)">Click here</button>
+    <script type="text/javascript">
+        function demo1() {
+            var h = document.getElementById("heading");
+            h.style.color = "red";
+        }
+        function demo2() {
+            console.log("BBBB...");
+         }
+        function demo3() {
+            console.log("CCC...");
+        }
+    </script>
+    <input name="name" onkeydown="textPress1(this)" onkeyup="textPress2(this)" type="text" placeholder="Enter word..."/>
+    <script type="text/javascript">
+        function textPress1(e) {
+          //  var x = e.value;
+          //  console.log("KEY DOWN:"+x);
+        }
+        function textPress2(e) {
+           // var x = e.value;
+            //console.log("KEY UP:"+x);
+        }
+        function textPress13(e) {
+            if(event.keycode == 13){
+                var x = e.value;
+                console.log("KEY Press: "+x);
+            }
+        }
+    </script>
+    <select name="city">
+        <option value="hn">Ha Noi</option>
+        <option value="sg">Sai Gon</option>
+        <option value="ct">Can Tho</option>
+        <option value="dn">Da Nang</option>
+    </select>
+    <script type="text/javascript">
+        function changeCity(e) {
+            var x = e.value;
+            console.log("CHANGE:  "+x);
+        }
+    </script>
+    <select name="mycolor">
+        <option value="red">RED</option>
+        <option value="green">GREEN</option>
+        <option value="blue">BLUE</option>
+        <option value="yellow">YELLOW</option>
+        <option value="orange">ORANGE</option>
+    </select>
+    <script type="text/javascript">
+        function changeColor(e) {
+            document.getElementById("heading").style.color = e.value;
+        }
+    </script>
+
+
+</body>
+</html>

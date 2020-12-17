@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Google Map</title>
+    <link rel="stylesheet" href="libs/Bootstrap%203.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/Demogooglemap.css">
+</head>
+<body>
+    <section class="section">
+        <div class="row">
+            <div class = "col-md-6">
+                <img src="imgs/nezuko.jpg"/>
+            </div>
+            <div class = "col-md-6">
+                <div id="map">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <script>
+        let map;
+        function initMap(position) {
+            const current = {
+                lat: position.coords.latitude
+                lng:position.coords.longitude
+            }
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: current,
+                zoom: 16,
+            });
+            const marker = new google.maps.Marker({
+                position: current,
+                map: map,
+            })
+        }
+    </script>
+</body>
+</html>

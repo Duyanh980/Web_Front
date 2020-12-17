@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // code js viet day
+        var x;
+        var y = 5;
+        x = 10; // x la 1 number
+        console.log(x+y); // -> 15
+        x = "Hello"; // x la 1 string
+        console.log(x+y); // -> Hello5
+        console.log(y+x); // -> 5Hello
+        console.log(x+x+y+x+y); // HelloHello5Hello5
+        var z ;
+        z = "hllo" + "world" + 'hahaha';
+        console.log(z);
+        if(z.length > 20){
+            console.log("z da vuot qua gioi han cho phep")
+        }else{
+            console.log("Van chua den 20 ky tu")
+        }
+
+        for (var i=0;i<z.length;i++){
+            console.log("i= "+i);
+        }
+
+        var arr = [];// khai bao mang
+        arr[0] = 5;
+        arr[1] = "hello";
+        arr[2] = 16;
+        arr.push(15);
+        arr.push("Xin chao");
+        arr.push([1,2,3]);
+        // arr.push([1,[4,5,6], "hello"]); //mang ko gioi han chieu
+        for (var i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.map((e)=>{
+            // e cung giong arr[i]
+            console.log(e);
+        })
+
+        var arr2 = [1,2,3,4,5,6];
+        if(arr2.includes(4)){
+            console.log("4 co trong mang");
+        }else{
+            console.log("ko co");
+        }
+
+
+    </script>
+    <script type="text/javascript" src="js/Section9JS.js">
+        // Ko dc viet code js o day. lay nguon tu section9 sang de load
+    </script>
+
+</body>
+</html>

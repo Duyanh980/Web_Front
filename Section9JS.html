@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //alert("Cam tre em duoi 18 tuoi");// void
+        //var c = confirm("Ban chac chan muon vao xem"); //boolean true/false
+        //if(c){ // neu nguoi dung ok
+        //    console.log("OK Men");
+        //}else{ // neu nguoi dung cancel
+        //    console.log("Cancel");
+        //}
+        //var p = prompt("Ban ten la gi?"); //string
+        //p = parseInt(p); // bien string thanh number (int)
+        /*
+            5 -> 5
+            5a -> 5
+            5a5 -> 5
+            5a6b7c8 -> 5
+            56ab8 -> 56
+            abc56d89 -> Nan: not a number
+         */
+        //isnan(p) // true: p la NaN. false ko phai
+        //if(isNan(p)){
+        //    console.log("Error";)
+        //}else{
+        //    console.log(p+5);// 10
+        //}
+
+
+        //Vi du: Tao 1 so ngau nhien 0-99 (so may man)
+        // Sau do cho nguoi dung nhap 1 so -> kiem tra xem trung giai hay ko
+        // tao so ngau nhien
+        //var rd = parseInt(Math.random()*100); // 0<=rd<100
+        //var luckyNumber = prompt("Nhap so may man:");
+        //luckyNumber = parseInt(luckyNumber);
+        //if(luckyNumber == rd){
+        //    alert("Chuc mung ban da trung giai");
+        //}else{
+        //    alert("Chuc ban may man vao ngay mai");
+        //}
+
+        //nhap 5 so ngau nhien (0-45) khác nhau -> xem trung giai vietlott
+        var vl = []
+        do{
+            var n = parseInt(Math.random()*46);
+            if(!vl.includes(n)){
+                vl.push(n);
+            }
+        }while (vl.length<5);
+        // chon 5 so 0-45
+        var ln = [];
+        do{
+           var n = prompt("Chon 1 so:");
+            n = parseInt(n);
+            if(!isNaN(n) && n>=0 && n<=45 && !ln.includes(n)){
+                ln.push(n);
+            }
+        }while (ln.length<5);
+        var count = 0;
+        ln.map((e)=>{
+            if(vl.includes(e)){
+                count++;
+            }
+        });
+        if(count==5){
+            alert("Chuc mung ban da trung 100 ty");
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>

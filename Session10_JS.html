@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo JS 10</title>
+</head>
+<body>
+    <h1 id="head1">Tiêu đề trang</h1>
+    <p id="p1">Tương tự tranh cử....</p>
+    <img is="nt" src="imgs/nezuko.jpg" height="410" width="728"/>
+    <script type="text/javascript">
+        function demo() {
+            var h = document.getElementById("head1");
+            h.innerText = "Tiêu đề sau khi chỉnh sửa";
+            var pp = document.getElementById("p1");
+            pp.style.color = "red";
+            pp.style.fontSize ="18px";
+            var text = pp.innerText; // string
+            pp.innerHTML = "<span>"+text+"</span>";
+            pp.classList.add("abc"); // them class
+            pp.classList.remove("xyz"); // xoa class xyz
+        }
+        setTimeout(demo,1500);
+        var f = true;
+        function Img(){
+            var x = document.getElementById("nt");
+            if(f){
+                x.style.display = "block";
+                f = false;
+            }else{
+                x.style.display = "none";
+                f = true;
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>
